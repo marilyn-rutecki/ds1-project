@@ -67,7 +67,7 @@ This project contains the following folders and files.
 - **`year_posts.csv`**: Yearly Reddit post data.  
 - **`yt-crime_data_2.csv` / `yt_crime_data_2.csv`**: YouTube video datasets meeting search parameters.  
 
-#### **Images**
+#### **Output**
 - **`crime_types_percentage.jpg`**: Visualization of crime type percentages.  
 - **`locality_percentage.jpg`**: Visualization of locality crime percentages.  
 
