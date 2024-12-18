@@ -24,6 +24,9 @@ Install the following necessary Python Packages:
 - requests: For sending HTTP requests.
 - beautifulsoup4: For web scraping HTML content.
 - statsmodels: For statistical models and tests.
+- transformers: For sentiment analysis of text data.
+- tensorflow: To operationalize transformers for sentiment analysis.
+- XGBoost: For multilabel machine learning classification 
 
 Beyond installing the libraries listed above, make sure that you have the necessary API keys set up for the respective libraries like the Youtube API and Reddit API before running the project.
 
@@ -49,27 +52,31 @@ This project is open for public use, and anyone is encouraged to utilize, modify
 This project contains the following folders and files. 
 
 #### **Jupyter Notebooks**
-- **`FOX_5_DC_Scraper.ipynb`**: Scrapes FOX 5 DC stories for analysis.  
+- **`FOX_5_DC_Scraper_Analysis.ipynb`**: Scrapes FOX 5 DC stories and provides analysis, including relevant graphical representation, sentiment analysis, etc.  
 - **`Youtube API.ipynb`**: Extracts data using the YouTube API.  
 - **`Youtube Analysis.ipynb`**: Analyzes and visualizes YouTube crime data.  
-- **`mpd-data.ipynb`**: Includes MPD (Metropolitan Police Department) data analysis of the MPD crime database 
-- **`re-reddit.ipynb`**: Processes Reddit data for further analysis.  
-- **`reddit-data.ipynb`**: Analyzes Reddit datasets.  
+- **`mpd-data.ipynb`**: Includes MPD (Metropolitan Police Department) data analysis of the MPD crime database  
 - **`reddit-scrape.ipynb`**: Scrapes Reddit posts.  
 
 #### **Data Files**
-- **`FOX5_stories_Sept24.csv`**: Dataset containing FOX 5 DC stories from September 2024.  
-- **`dc-crimes-search-results.csv`**: Filtered results related to DC crimes.  
+- **`FOX5_DC_News_Raw.csv`**: Dataset containing all FOX 5 DC news stories from September 1 2024 till December 5 2024.
+- **`FOX5_crime_related_news.csv`**: Dataset containing crime related news stories from FOX 5 based on the defined list of crime related keywords.
+- **`FOX5_labeled_sampled_stories.csv`**: Dataset containing 50 news stories randomly sampled from the original FOX 5 crime related news stories dataset for manually coding for type of crime, locality, and personal attributes.
+- **`dc-crimes-search-results.csv`**: Raw MPD data.  
 - **`filtered_reddit_posts.csv`**: Pre-processed Reddit posts dataset.  
 - **`last_year_posts.csv`**: Reddit posts from the past year.  
 - **`reddit_test_submission_db.csv`**: Test submissions dataset for Reddit.  
-- **`updated_file.csv`**: Updated dataset file.  
+- **`updated_file.csv`**: Updated dataset file and processed data from MPD.  
 - **`year_posts.csv`**: Yearly Reddit post data.  
 - **`yt-crime_data_2.csv` / `yt_crime_data_2.csv`**: YouTube video datasets meeting search parameters.  
 
 #### **Output**
 - **`crime_types_percentage.jpg`**: Visualization of crime type percentages.  
-- **`locality_percentage.jpg`**: Visualization of locality crime percentages.  
+- **`locality_percentage.jpg`**: Visualization of locality crime percentages.
+- **`crime_type_comparison.jpg`**: Comparative graph on types of crime for MPD, YouTube and FOX 5.
+- **`locality_comparison.jpg`**: Compares incidence/reporting of crime for MPD, YouTube and FOX 5.
+- **`personal_attributes_comparison.jpg`**: Compares personal characteristics for perpetrators/victims in crime related coverage for YouTube and FOX 5.
+- **`FOX5_sentiment_distribution.jpg`**: Sentiment analysis for FOX 5 crime related news stories. 
 
 #### **Configuration and Miscellaneous**
 - **`.gitignore`**: Specifies files to ignore in version control. This file contains API keys stored in a local .env file  
