@@ -5,11 +5,9 @@ This repository contains the final project for Data Science I: Foundations.
 
 ## Project Contents 
 
-### Overview
+### Overview/ Abstract
 
-This project focuses on examining crime communication dynamics in Washington, D.C., where crime rates fluctuate, especially in the context of violent crime. The city’s unique status as both a local urban area and national capital amplifies the public and media interest in crime stories. Inspired by personal observations, the project explores how crime narratives evolve on digital platforms like social media and news sites. It investigates the mechanisms that influence which crime stories gain traction, how these stories differ from official crime reporting, and how public perception is shaped by factors such as media coverage and audience engagement.
-
-The aim is to analyze the engagement and sentiment surrounding crime-related content, comparing it with official crime statistics from the Metropolitan Police Department (MPD). By utilizing predictive and inferential modeling techniques, the project seeks to understand the factors that drive media coverage, such as crime type, victim or perpetrator characteristics, and the likelihood of garnering public engagement. The research hypothesizes that certain crimes, especially violent crimes, and specific characteristics, like the age of suspects, will attract more media attention. Ultimately, the project aims to reveal the gaps between official crime data and digital narratives, shedding light on how media platforms influence public understanding of crime in urban areas.
+This study investigates the digital landscape of crime communication in Washington, D.C. and analyzes how crime stories are reported and discussed across social media and mainstream news platforms. We scraped and downloaded data from YouTube, Fox News 5, and the Metropolitan Police Department (MPD). Using aggregate statistics, predictive and inferential modeling, and sentiment analysis, we analyzed coverage of crime-related content, comparing it with MPD crime statistics. Our research explored three hypotheses: the likelihood of media coverage based on the crime type (with violent crimes expected to receive more attention), geographical variations in crime reporting across D.C. quadrants, and the potential influence of personal characteristics on content engagement and coverage. We discovered egregious crimes like homicide and assault garner more media attention, with nuanced geographical reporting patterns emerging—particularly in wealthier neighborhoods like Northwest D.C. Contrary to initial expectations, crimes committed by teenagers did not consistently drive media engagement. This analysis contributes to understanding crime narratives in D.C. and could be further applied to broader media coverage and engagement. 
 
 ### Installation & Getting Started
 
@@ -56,7 +54,7 @@ This project contains the following folders and files.
 - **`Youtube API.ipynb`**: Extracts data using the YouTube API.  
 - **`Youtube Analysis.ipynb`**: Analyzes and visualizes YouTube crime data.  
 - **`mpd-data.ipynb`**: Includes MPD (Metropolitan Police Department) data analysis of the MPD crime database  
-- **`reddit-scrape.ipynb`**: Scrapes Reddit posts.  
+- **`reddit-scrape.ipynb`**: Scrapes Reddit posts using PRAW wrapper.  
 
 #### **Data Files**
 - **`FOX5_DC_News_Raw.csv`**: Dataset containing all FOX 5 DC news stories from September 1 2024 till December 5 2024.
